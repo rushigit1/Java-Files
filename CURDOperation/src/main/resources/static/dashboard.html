@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Dashboard</title>
+
+<script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+<script src="/js/course.js"></script>
+ <style>
+   table {
+   
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.25px;
+}
+thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+ th,
+ td {
+    padding: 12px 15px;
+}
+ tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+ tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+ tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+.newCourse {
+    text-align: center;
+   margin-top: 50px;
+}
+#addnewcourseButtonId{
+    background-color: #cfe2f3;
+    width: 150px;
+    height: 32px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+</style>
+</head>
+<body>
+	<div class="newCourse"><a href="AddNewCourse.html"><button id = "addnewcourseButtonId">Add New Courses</button></a></div><br><br>
+		<table>
+				<thead>
+					<tr>
+						<th>CourseId</th>
+						<th>CourseName</th>
+						<th>Fees</th>
+						<th>Duration</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody 
+				id="coursetbodyId">
+				</tbody>
+		</table>
+</body>
+</html>
